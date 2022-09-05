@@ -1,0 +1,23 @@
+.title{
+ text-align:center;
+}
+.main-title{
+ display:block;
+ font-size:16px;
+}
+.item-list{
+ width:900px;
+}
+.item{
+ width:300px;
+ display:inline-block;
+}
+.item-img{
+ width:100%
+}
+.subtitle{
+ color:blueviolet
+}
+*{
+ box-sizing:border-box;
+}
