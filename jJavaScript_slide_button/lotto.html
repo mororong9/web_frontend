@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>slide button</title>
+<style>
+ .ball{
+  display:inline-block;
+  width:5rem;
+  height:5rem;
+  
+  background-color:aquamarine ;
+  border-radius: 50%;
+  text-align:center;
+  line-height:5rem;
+  font-size:xx-large;
+  font-weight:bold;
+  justify-content:center;
+
+
+
+ }
+</style>
+</head>
+
+<body>
+ <h1>로또 추천 번호</h1>
+ <button id="lotto-btn">로또버튼</button>
+ <div class="ball-container">
+ <div class="ball">5</div>
+  <div class="ball">12</div>
+  <div class="ball">5</div>
+  <div class="ball">9</div>
+ </div>
+
+ <script>
+  const button=document.querySelector('#lotto-btn')
+  button.addEventListener('click', function(){
+   const ballContainer=document.createElement('div')
+   ballContainer.classList.add('ball-container')
+   
+   const ball=document.createElement('div')
+   ball.classList.add('ball')
+   
+   ballContainer.appendChild(ball)
+
+   const result=document.querySelector('#result')
+   result.appendChild(ballContainer)
+  })
+ </script>
+</body>
+</html>
